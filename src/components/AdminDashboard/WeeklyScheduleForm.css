@@ -1,0 +1,174 @@
+﻿/* Modal layout */
+.custom-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Nền mờ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.custom-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px; /* Tăng chiều rộng modal */
+    max-height: 90vh; /* Đặt giới hạn chiều cao modal */
+    overflow-y: auto; /* Bật cuộn dọc nếu nội dung quá dài */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 60px auto; /* Đặt khoảng cách từ trên xuống */
+}
+
+/* Group các thành phần của form */
+.custom-form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+    .custom-form-group input[type="text"],
+    .custom-form-group input[type="file"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+
+    .custom-form-group label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+/* Nút Save và Cancel */
+.custom-modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.custom-save-button, .custom-cancel-button {
+    width: 45%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.custom-save-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.custom-cancel-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Tabs của Weekly Schedule */
+.custom-day-selector {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Cho phép cuộn ngang */
+}
+
+.custom-day-tab {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1; /* Giúp các tab có kích thước bằng nhau */
+    margin: 0 5px;
+    min-width: 100px; /* Đặt chiều rộng tối thiểu cho tab */
+}
+
+    .custom-day-tab.active {
+        background-color: #007bff;
+        color: white;
+        border: 1px solid #007bff;
+    }
+
+/* Grid cho khung thời gian */
+.custom-time-slot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột cân đối */
+    gap: 10px;
+}
+
+.custom-time-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+/* Căn chỉnh cho các nút trong modal */
+.custom-modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Weekly Schedule container background */
+.weekly-schedule-form-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.05); /* Khung nền mờ */
+    border-radius: 10px; /* Để bo tròn khung */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    width: 100%;
+}
+
+/* Time slots grid layout */
+.custom-time-slot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột đều nhau */
+    gap: 15px;
+    justify-items: center; /* Căn giữa các ô thời gian */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Time checkbox */
+.custom-time-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Căn giữa checkbox và thời gian */
+}
+
+/* Nút lưu và hủy */
+.custom-modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Các nút Save và Cancel */
+.custom-save-button, .custom-cancel-button {
+    width: 45%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.custom-save-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.custom-cancel-button {
+    background-color: #dc3545;
+    color: white;
+}
+

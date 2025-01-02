@@ -1,0 +1,116 @@
+﻿/* src/components/Login/Login.css */
+
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+.login-box {
+    width: 66.67%;
+    padding: 40px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 350px; /* Căn chỉnh lại chiều rộng của khung */
+    margin: 10px 0;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+    max-width: 350px; /* Đảm bảo chiều rộng của password-container giống các khung khác */
+}
+
+    .password-container .input-field {
+        padding-right: 40px; /* Chừa không gian cho biểu tượng con mắt */
+    }
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
+}
+
+.extra-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 350px; /* Căn chỉnh chiều rộng giống các phần tử khác */
+    margin-top: 10px;
+}
+
+    .extra-links label {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    max-width: 350px; /* Cùng max-width với các phần tử khác */
+}
+
+    .login-button:hover {
+        background-color: #0056b3;
+    }
+
+.image-side {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.contain-image {
+    width: auto;
+    height: 100vh;
+    object-fit: cover;
+}

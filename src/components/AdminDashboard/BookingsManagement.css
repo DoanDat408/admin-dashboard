@@ -1,0 +1,38 @@
+.bookings-management-container {
+    padding: 20px;
+}
+
+.bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .bookings-table th, .bookings-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .bookings-table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+.edit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

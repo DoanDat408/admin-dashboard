@@ -1,0 +1,156 @@
+/* Modal Backdrop */
+.booking-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align towards the top */
+    padding-top: 80px; /* Add padding to move the modal down */
+    z-index: 1050; /* Ensure the modal is on top */
+}
+
+/* Modal Content Box */
+.booking-modal-content {
+    background-color: #fff;
+    width: 450px;
+    max-width: 100%; /* Responsive design */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1051; /* Ensure it's on top of the backdrop */
+    font-family: Arial, sans-serif;
+    max-height: 90vh;
+    overflow-y: auto; /* Scroll support for long content */
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 600px) {
+    .booking-modal-content {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px;
+    }
+}
+
+
+
+/* Close Button */
+.booking-modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+}
+
+/* Title Styling */
+.booking-modal-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Label */
+.booking-form-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    text-align: left;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input, Select, and Button Styling */
+.booking-form-input,
+.booking-form-select,
+.booking-form-button {
+    width: 100%;
+    padding: 12px; /* Adjust padding for a balanced look */
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Specific Styles for Select and Input */
+.booking-form-select {
+    appearance: none; /* For consistent styling across browsers */
+    background-color: #fff;
+}
+
+/* Buttons */
+.booking-form-button {
+    width: 48%;
+    padding: 10px;
+    margin-right: 2%;
+    margin-bottom: 0;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    /* Hover Effects */
+    .booking-form-button:hover {
+        background-color: #0056b3;
+    }
+
+/* Cancel Button */
+.booking-form-cancel {
+    background-color: #f44336;
+}
+
+    .booking-form-cancel:hover {
+        background-color: #d73833;
+    }
+
+/* Service List */
+.booking-service-list {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.booking-service-item {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Ensure Read-only Fields are Disabled Properly */
+.booking-form-input[readonly] {
+    background-color: #f1f1f1;
+    cursor: not-allowed;
+}
+
+/* Adjust for Input and Button Width */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Align buttons horizontally */
+.booking-form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+.react-datepicker__header {
+    background-color: #007bff; /* Change header background */
+    color: white;
+}
+
+.react-datepicker__day--selected {
+    background-color: #007bff; /* Change selected day color */
+    color: white;
+}
